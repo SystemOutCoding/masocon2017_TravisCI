@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <time.h>
 unsigned int nl(char * _argv);
 unsigned int _random(unsigned int cntAttendees);
 void lottery(unsigned int seed, char * _argv);
@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
 	char * _argv = argv[argc - 1];
 	char interrupter;
  	cntAttendees = nl(_argv);
-
+	srand(time(NULL));
 	printf("금일 참가한 인원윈 : %d명 입니다. \n", cntAttendees);
 	
 	while(interrupter != 'e'){
