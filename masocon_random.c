@@ -30,7 +30,7 @@ void lottery(unsigned int seed, char * _argv){
 	int i = 0;	
 	while(fgets(buf,256,ptr_file)!=NULL){
 		if(i == seed){
-			printf("%s", buf);
+			printf("%s 축하합니다.", buf);
 		}
 		i++;
 	}
